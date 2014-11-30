@@ -10,6 +10,10 @@ pip install -e "git+git@github.com:lennyhbt/pelican.git#egg=pelican"
 git clone --recursive git@github.com:lennyhbt/pelican-plugins.git
 #git clone --recursive git@github.com:lennyhbt/pelican-themes.git
 
+echo "Installing GitHub Pages tools..."
+pip install ghp-import
+pip install gph-update
+
 echo "cloning foshuo blog..."
 git clone git@github.com:lennyhbt/foshuo.git
 echo "cloneing foshuo-theme..."
