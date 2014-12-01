@@ -1,6 +1,17 @@
-使用 Pelican 搭建的一个静态网站并使用 GitHub Pages 提供服务。
+佛说，说佛，佛是一种境界吧。
+
+佛说是使用 Pelican 搭建的一个静态网站并使用 GitHub Pages 提供服务。
 
 开发环境搭建
 =============
-执行 dev.sh 脚本会在当前目录建立 foshuo 目录，并在该目录中创建开发环境。
+
+.. code-block:: bash
+
+    curl https://raw.githubusercontent.com/lennyhbt/foshuo/master/dev.sh | bash -
+
+或者
+
+.. code-block:: bash
+
+    wget https://raw.githubusercontent.com/lennyhbt/foshuo/master/dev.sh -O - | bash -
 
