@@ -1,6 +1,6 @@
 __pycache__/
 cache/
 output/
-*.pcy
+*.pyc
 *.pid
 
