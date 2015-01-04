@@ -1,0 +1,18 @@
+div.hint, div.note, div.tip {
+    padding: 10px 15px 10px 15px;
+    background: #e4ffde 15px 15px no-repeat;
+    min-height: 42px;
+}
+
+div.admonition, div.attention, div.warning, div.important {
+    padding: 10px 15px 10px 80px;
+    background: #fffbc6 15px 15px no-repeat;
+    min-height: 42px;
+}
+
+div.caution, div.danger, div.error {
+    padding: 10px 15px 10px 80px;
+    background: #ff6666 15px 15px no-repeat;
+    min-height: 42px;
+}
+
