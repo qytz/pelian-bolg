@@ -19,8 +19,10 @@
 <meta property="og:article:author" content="Lennyh" />
         <title>All Categories · 佛说
 </title>
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <!--link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"-->
+        <!--link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet"-->
+        <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://lennyhbt.github.io/theme/css/pygments.css" media="screen">
         <link rel="stylesheet" type="text/css" href="http://lennyhbt.github.io/theme/tipuesearch/tipuesearch.css" media="screen">
         <link rel="stylesheet" type="text/css" href="http://lennyhbt.github.io/theme/css/elegant.css" media="screen">
@@ -50,13 +52,17 @@
                             <li ><a href="http://lennyhbt.github.io/archives.html">归档</a></li>
                             <li ><a href="http://lennyhbt.github.io/pages/contactme.html">关于</a></li>
                             <li>
-                            <div class="navbar-search">
+                            <!-- Baidu 站内搜索 -->
+                            <!--div class="navbar-search">
                             <script type="text/javascript">document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://znsv.baidu.com/customer_search/api/js?sid=16064494741144307539') + '&plate_url=' + (encodeURIComponent(window.location.href)) + '&t=' + (Math.ceil(new Date()/3600000)) + unescape('"%3E%3C/script%3E'));</script>
-                            </div>
-                            <!--form class="navbar-search" action="http://www.sogou.com/web" target="_blank">
-                                <input type="text" name="query" class="search-query" placeholder="搜索您感兴趣的内容" name="q" id="tipue_search_input">
-                                <input type="hidden" name="insite" value="lennyhbt.github.io/foshuo">
-                            </form-->
+                            </div-->
+                            <form class="navbar-search" action="http://www.baidu.com/baidu" target="_blank">
+                                <input type="text" name="word" class="search-query" placeholder="搜索您感兴趣的内容">
+                                <input name=tn type=hidden value="bds">
+                                <input name=cl type=hidden value="3">
+                                <input name=ct type=hidden value="2097152">
+                                <input name=si type=hidden value="http://lennyhbt.github.io/">
+                            </form>
                             </li>
                         </ul>
                     </div>
@@ -138,14 +144,10 @@
             "https://github.com/lennyhbt/foshuo-theme" title="foshuo theme">Lennyhbt</a></li>
     </ul>
 </div>
-</footer>        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
+</footer>        <!--script src="http://code.jquery.com/jquery.min.js"></scripa-->
+        <!--script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script-->
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
 <script  language="javascript" type="text/javascript">
     function uncollapse() {
