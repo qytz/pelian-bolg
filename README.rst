@@ -7,11 +7,11 @@
 
 .. code-block:: bash
 
-    curl https://raw.githubusercontent.com/lennyhbt/foshuo/master/dev.sh | bash -
+    curl https://raw.githubusercontent.com/lennyhbt/lennyhbt.github.io/master/dev.sh | bash -
 
 或者
 
 .. code-block:: bash
 
-    wget https://raw.githubusercontent.com/lennyhbt/foshuo/master/dev.sh -O - | bash -
+    wget https://raw.githubusercontent.com/lennyhbt/lennyhbt.github.io/master/dev.sh -O - | bash -
 
