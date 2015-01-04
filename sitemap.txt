@@ -13,7 +13,7 @@ http://lennyhbt.github.io/hello.html
 http://lennyhbt.github.io/category/ji-zhu-wen-ti-jie-jue.html
 http://lennyhbt.github.io/category/misc.html
 http://lennyhbt.github.io/category/tech.html
-http://lennyhbt.github.io/tag/javascript.html
 http://lennyhbt.github.io/tag/ji-zhu-za-tan.html
 http://lennyhbt.github.io/tag/yuan-qi.html
+http://lennyhbt.github.io/tag/javascript.html
 http://lennyhbt.github.io/author/lennyh.html
