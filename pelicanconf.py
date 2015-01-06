@@ -28,7 +28,8 @@ DEFAULT_METADATA = (
         ('lang', 'zh'),
         )
 
-SOHU_CHANGYAN = "foshuo"
+SOHU_CHANGYAN = True
+SHARELINK = True
 
 #TEMPLATE_PAGES = {'src/books.html': 'dest/books.html'}
 # for index page
