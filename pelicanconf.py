@@ -28,6 +28,8 @@ DEFAULT_METADATA = (
         ('lang', 'zh'),
         )
 
+SOHU_CHANGYAN = "foshuo"
+
 #TEMPLATE_PAGES = {'src/books.html': 'dest/books.html'}
 # for index page
 #DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives')
