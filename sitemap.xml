@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://lennyhbt.github.io/index.html</loc>
-<lastmod>2015-01-05T11:18:00-00:00</lastmod>
+<lastmod>2015-01-06T19:29:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lennyhbt.github.io/archives.html</loc>
-<lastmod>2015-01-05T11:18:00-00:00</lastmod>
+<lastmod>2015-01-06T19:29:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lennyhbt.github.io/tags.html</loc>
-<lastmod>2015-01-05T11:18:00-00:00</lastmod>
+<lastmod>2015-01-06T19:29:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://lennyhbt.github.io/categories.html</loc>
-<lastmod>2015-01-05T11:18:00-00:00</lastmod>
+<lastmod>2015-01-06T19:29:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -81,8 +81,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://lennyhbt.github.io/tag/javascript.html</loc>
-<lastmod>2014-12-17T19:24:00+08:06</lastmod>
+<loc>http://lennyhbt.github.io/tag/ji-zhu-za-tan.html</loc>
+<lastmod>2014-12-24T15:06:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -95,8 +95,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://lennyhbt.github.io/tag/ji-zhu-za-tan.html</loc>
-<lastmod>2014-12-24T15:06:00+08:06</lastmod>
+<loc>http://lennyhbt.github.io/tag/javascript.html</loc>
+<lastmod>2014-12-17T19:24:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
