@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>佛说</title><link>http://lennyhbt.github.io/</link><description></description><atom:link href="http://lennyhbt.github.io/feeds/lennyh.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 24 Dec 2014 15:06:00 +0800</lastBuildDate><item><title>VPN 高级选项那些事</title><link>http://lennyhbt.github.io/vpn_advance_options.html</link><description>&lt;div class="section" id="id1"&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>佛说</title><link>http://lennyhbt.github.io/</link><description></description><atom:link href="http://lennyhbt.github.io/feeds/lennyh.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 24 Dec 2014 15:06:00 +0800</lastBuildDate><item><title>VPN 高级选项那些事</title><link>http://lennyhbt.github.io/vpn_advance_options_misc.html</link><description>&lt;div class="section" id="id1"&gt;
 &lt;h2&gt; 一 、VPN 高级选项 &lt;/h2&gt;
 &lt;div class="section" id="id2"&gt;
 &lt;h3&gt;VPN 高级选项有哪些 ， 都是什么意思 &lt;/h3&gt;
@@ -165,7 +165,7 @@ DNS 配置 ， 路由 ， 地址等信息 ， 你确保不会改乱 ？&lt;/p&gt
  这大概是一个趋势吧 ， 只有一种或者两种网络连接的时候 ， 我可以随便改 ， 要是系统有很多种连接类型 ， 可就不能胡来了 。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lennyh</dc:creator><pubDate>Wed, 24 Dec 2014 15:06:00 +0800</pubDate><guid>tag:lennyhbt.github.io,2014-12-24:vpn_advance_options.html</guid><category>技术杂谈</category></item><item><title>JavaScript的移位运算与IP地址处理</title><link>http://lennyhbt.github.io/javascript-bit-operation-with-ip-process.html</link><description>&lt;p&gt; 最近在做项目时有一个需求 ， 将用户输入的  &lt;em&gt; 地址 / 掩码 &lt;/em&gt;  对解析出来 ， 并将数字掩码转换成点分的格式 。&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lennyh</dc:creator><pubDate>Wed, 24 Dec 2014 15:06:00 +0800</pubDate><guid>tag:lennyhbt.github.io,2014-12-24:vpn_advance_options_misc.html</guid><category>技术杂谈</category></item><item><title>JavaScript的移位运算与IP地址处理</title><link>http://lennyhbt.github.io/javascript-bit-operation.html</link><description>&lt;p&gt; 最近在做项目时有一个需求 ， 将用户输入的  &lt;em&gt; 地址 / 掩码 &lt;/em&gt;  对解析出来 ， 并将数字掩码转换成点分的格式 。&lt;/p&gt;
 &lt;p&gt; 想到在 C 代码里面应该还算容易实现 ， 通过最大 32 位整数位移就可完成 ， 但是在  JavaScript  中如何实现还是很不清楚的 。&lt;/p&gt;
 &lt;p&gt; 因为考虑到 JavaScript 是弱类型的语言 ， 首先就会遇到数字和字符串的转换等问题 ， 接着还有按位操作的问题也不知道在 JavaScript 中如何实现 。
  然后开始查询资料尝试解决这些问题 。 数字和字符串类型的转换是不需要的 ， 写代码尝试了下应该 JavaScript 自动做了类型转换 。&lt;/p&gt;
@@ -209,10 +209,9 @@ JavaScript 的左移运算保留数字的符号位 。 例如 ， 如果把  -2 
 &lt;li&gt;&lt;a class="reference external" href="http://stackoverflow.com/questions/21903482/cidr-to-netmask-converion-in-javascript"&gt;CIDR to netmask converion in javascript&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lennyh</dc:creator><pubDate>Wed, 17 Dec 2014 19:24:00 +0800</pubDate><guid>tag:lennyhbt.github.io,2014-12-17:javascript-bit-operation-with-ip-process.html</guid><category>javascript</category></item><item><title>Hello Pelican &amp; GitHub Pages</title><link>http://lennyhbt.github.io/hello.html</link><description>&lt;p&gt; 不知不觉做技术也已经四年有余了 ， 四年来不管在技术 、 工作及生活中都积累了一些不错的经验教训 （ 以及很多好玩的东西 ）。&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lennyh</dc:creator><pubDate>Wed, 17 Dec 2014 19:24:00 +0800</pubDate><guid>tag:lennyhbt.github.io,2014-12-17:javascript-bit-operation.html</guid><category>javascript</category></item><item><title>Hello Pelican &amp; GitHub Pages</title><link>http://lennyhbt.github.io/helloworld.html</link><description>&lt;p&gt; 不知不觉做技术也已经四年有余了 ， 四年来不管在技术 、 工作及生活中都积累了一些不错的经验教训 （ 以及很多好玩的东西 ）。&lt;/p&gt;
 &lt;p&gt; 但是碍于个人的懒惰 ， 虽偶有尝试 ， 却从未能够坚持一直把学到的东西记录下来供以后 。&lt;/p&gt;
 &lt;p&gt; 于是 ， 很多好东西消逝在时光中 ， 余实在不忍继续这样下去 。&lt;/p&gt;
 &lt;p&gt; 于是 ， 下定决心 ， 在此搭建此平台 ， 希望自己能够坚持不懈 ， 把那些值得记录的东西记录下来 。&lt;/p&gt;
 &lt;p&gt; 愿有机会满怀高兴的回翻这些有趣的东西 ， 愿有趣的东西越来越多 。&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lennyh</dc:creator><pubDate>Thu, 11 Dec 2014 10:19:00 +0800</pubDate><guid>tag:lennyhbt.github.io,2014-11-30:hello.html</guid><category>缘起</category></item><item><title>for test</title><link>http://lennyhbt.github.io/test.html</link><description>&lt;p&gt;asdsafafasf&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lennyh</dc:creator><pubDate>Thu, 11 Dec 2014 10:19:00 +0800</pubDate><guid>tag:lennyhbt.github.io,2014-11-30:test.html</guid><category>test</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lennyh</dc:creator><pubDate>Thu, 11 Dec 2014 10:19:00 +0800</pubDate><guid>tag:lennyhbt.github.io,2014-11-30:helloworld.html</guid><category>缘起</category></item></channel></rss>

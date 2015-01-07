@@ -11,7 +11,7 @@
 <meta name="keywords" content="javascript, 技术问题解决, " />
 
 <meta property="og:title" content="JavaScript的移位运算与IP地址处理 "/>
-<meta property="og:url" content="http://lennyhbt.github.io/javascript-bit-operation-with-ip-process.html" />
+<meta property="og:url" content="http://lennyhbt.github.io/javascript-bit-operation.html" />
 <meta property="og:description" content="最近在做项目时有一个需求 ， 将用户输入的 地址 / 掩码 对解析出来 ， 并将数字掩码转换成点分的格式 。 想到在 C 代码里面应该还算容易实现 ， 通过最大 32 位整数位移就可完成 ， 但是在 JavaScript 中如何实现还是很不清楚的 。 因为考虑到 JavaScript 是弱类型的语言 ， 首先就会遇到数字和字符串的转换等问题 ， 接着还有按位操作的问题也不知道在 JavaScript 中如何实现 。 然后开始查询资料尝试解决这些问题 。 数字和字符串类型的转换是不需要的 ， 写代码尝试了下应该 JavaScript 自动做了类型转换 。 首先想到的思路是根据最大 32 位整数位移获取掩码对应的整数值 ， 然后将结果转换成点分格式的字符串 。 在网上找到了如下的代码 。 1 function ip2long(ip) { 2 var ipl=0; 3 ip.split(&#39;.&#39;).forEach(function( octet ) { 4 ipl&lt;&lt;=8; 5 ..." />
 <meta property="og:site_name" content="佛说" />
 <meta property="og:article:author" content="Lennyh" />
@@ -75,7 +75,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="http://lennyhbt.github.io/javascript-bit-operation-with-ip-process.html"> JavaScript的移位运算与IP地址处理  </a></h1>
+    <h1><a href="http://lennyhbt.github.io/javascript-bit-operation.html"> JavaScript的移位运算与IP地址处理  </a></h1>
     </header>
 </div>
 
@@ -158,8 +158,8 @@ JavaScript 的左移运算保留数字的符号位 。 例如 ， 如果把  -2 
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="http://lennyhbt.github.io/hello.html" title="Previous: Hello Pelican &amp; GitHub Pages">Hello Pelican & GitHub Pages</a></li>
-                <li class="next-article"><a href="http://lennyhbt.github.io/vpn_advance_options.html" title="Next: VPN 高级选项那些事">VPN 高级选项那些事</a> »</li>
+                <li class="previous-article">« <a href="http://lennyhbt.github.io/helloworld.html" title="Previous: Hello Pelican &amp; GitHub Pages">Hello Pelican & GitHub Pages</a></li>
+                <li class="next-article"><a href="http://lennyhbt.github.io/vpn_advance_options_misc.html" title="Next: VPN 高级选项那些事">VPN 高级选项那些事</a> »</li>
             </ul>
             </nav>
             </aside>
