@@ -29,7 +29,7 @@ DEFAULT_METADATA = (
         )
 
 SOHU_CHANGYAN = True
-SHARELINK = "jiathis"
+SHARELINK = "bottom"
 
 #TEMPLATE_PAGES = {'src/books.html': 'dest/books.html'}
 # for index page
