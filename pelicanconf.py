@@ -153,7 +153,10 @@ SOCIAL_PROFILE_LABEL = u'保持联系'
 RELATED_POSTS_LABEL = '继续阅读...'
 
 # Legal
-SITE_LICENSE = u'<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> 佛说</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://lennyhbt.github.io/" property="cc:attributionName" rel="cc:attributionURL">Lennyhbt</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.'
+SITE_LICENSE = u'<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">佛说</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://lennyhbt.github.io/" property="cc:attributionName" rel="cc:attributionURL">Lennyhbt</a> 创作，采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享 署名-非商业性使用 4.0 国际 许可协议</a>进行许可。<br />基于<a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/lennyhbt/lennyhbt.github.io" rel="dct:source">https://github.com/lennyhbt/lennyhbt.github.io</a>上的作品创作。'
+
+
+#'<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> 佛说</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://lennyhbt.github.io/" property="cc:attributionName" rel="cc:attributionURL">Lennyhbt</a> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.'
 
 # SEO
 SITE_DESCRIPTION = u'My name is Talha Mansoor \u2015 a software engineer who gets things done. I am talha131 at Github and @talham_ at twitter. I design and build software products for iOS and OSX. I work on Jump Desktop which is a remote desktop application for iOS, OSX and Android. This is my personal blog.'
