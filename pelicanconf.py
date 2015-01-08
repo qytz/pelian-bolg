@@ -4,9 +4,9 @@ from __future__ import unicode_literals
 
 # site settings
 AUTHOR = 'Lennyh'
-AUTHORS = ['Lennyh']
 SITENAME = '佛说'
 SITEURL = 'http://localhost:8000'
+
 PATH = 'content'
 PAGE_PATHS = ['pages']
 ARTICLE_PATHS = ['articles']
@@ -22,22 +22,16 @@ WITH_FUTURE_DATES = False # set to false so future date for draft
 OUTPUT_RETENTION = (".git", ".hg", ".bzr", ".svn")
 OUTPUT_SOURCES = False
 OUTPUT_SOURCES_EXTENSION = '.text'
-STATIC_PATHS = ['images']
 DEFAULT_METADATA = (
         ('authors', 'Lennyh'),
         ('lang', 'zh'),
         )
 
-SOHU_CHANGYAN = True
-SHARELINK = "bottom"
-
 #TEMPLATE_PAGES = {'src/books.html': 'dest/books.html'}
-# for index page
-#DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives')
 
 # code highlight options
 PYGMENTS_RST_OPTIONS = {
-        'linenos':'inline',
+        'linenos':'table',
         }
 
 # for printer
@@ -63,10 +57,12 @@ PLUGINS = [
 #'better_figures_and_images',
 #'code_include',
 'collate_content',
+'tipue_search',
 #'filetime_from_git',
 'neighbors',
 #'pdf',
 'pin_to_top',
+'extract_toc',
 #'random_article',
 #'related_posts',
 #'share_post',
@@ -90,14 +86,7 @@ SITEMAP = {
 
 # theme
 THEME='../foshuo-theme'
-#THEME='pelican-themes/pelican-twitchy'     # with beautifull left navbar
-#THEME='pelican-themes/pelican-iliork'      # good for blog, without navbar aside
-#THEME='pelican-themes/plumage'             # good for blog, without navbar aside
-#THEME='pelican-themes/chunk'               # not very good
 #THEME='pelican-themes/elegant'             # red theme
-#THEME='pelican-themes/gum'                 # good for blog
-#THEME='pelican-themes/Just-Read'
-#THEME='pelican-themes/dev-random'
 
 # docutils settings
 DOCUTILS_SETTINGS = {}
@@ -105,12 +94,7 @@ DOCUTILS_SETTINGS = {}
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('github', 'https://github.com/lennyhbt'),
-          )
+         ('Jinja2', 'http://jinja.pocoo.org/'),)
 
 # tagcloud
 TAG_CLOUD_STEPS = 4             # Count of different font sizes in the tag cloud
@@ -128,6 +112,17 @@ FEED_RSS = None
 #TAG_FEED_ATOM = None
 #TAG_FEED_RSS = None
 
+# Social widget
+SOCIAL = (('github', 'https://github.com/lennyhbt'),
+          )
+
+SOHU_CHANGYAN = True
+SHARELINK = "bottom"
+
+# elegant settings
+# Elegant theme
+STATIC_PATHS = ['theme/images', 'images']
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search', '404'))
 # url settings
 ARTICLE_URL = '{slug}.html'
 ARTICLE_SAVE_AS = '{slug}.html'
@@ -144,16 +139,39 @@ PAGE_ORDER_BY = 'basename'
 PAGE_LANG_URL = 'pages/{slug}-{lang}.html'
 PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}.html'
 CATEGORY_URL = 'category/{slug}.html'
-CATEGORY_SAVE_AS = 'category/{slug}.html'
 TAG_URL = 'tag/{slug}.html'
-TAG_SAVE_AS = 'tag/{slug}.html'
 AUTHOR_URL = 'author/{slug}.html'
-AUTHOR_SAVE_AS = 'author/{slug}.html'
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
-#DAY_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/index.html'
-#SLUG_SUBSTITUTIONS = ()
+TAG_SAVE_AS = 'tag/{slug}.html'
+AUTHOR_SAVE_AS = 'author/{slug}.html'
+CATEGORY_SAVE_AS = 'category/{slug}.html'
+USE_SHORTCUT_ICONS = True
+
+# Elegant Labels
+SOCIAL_PROFILE_LABEL = u'保持联系'
+RELATED_POSTS_LABEL = '继续阅读...'
+
+# Legal
+SITE_LICENSE = u'<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"> 佛说</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://lennyhbt.github.io/" property="cc:attributionName" rel="cc:attributionURL">Lennyhbt</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.'
+
+# SEO
+SITE_DESCRIPTION = u'My name is Talha Mansoor \u2015 a software engineer who gets things done. I am talha131 at Github and @talham_ at twitter. I design and build software products for iOS and OSX. I work on Jump Desktop which is a remote desktop application for iOS, OSX and Android. This is my personal blog.'
+
+# Landing Page
+PROJECTS = [
+{
+'name': 'Big-Doc',
+'url':
+'https://github.com/lennyhbt/big-doc',
+'description': '自己所写及所译的一些技术文档'},
+]
+LANDING_PAGE_ABOUT = {'title': '佛说',
+'details': """
+关于我，关于本站，确实没有太多要说的，大家看就好了:)
+"""}
 
 # for develop
 LOAD_CONTENT_CACHE = False
 RELATIVE_URLS = True # Uncomment following line if you want document-relative URLs when developing
+
