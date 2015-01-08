@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>佛说</title><link href="http://lennyhbt.github.io/" rel="alternate"></link><link href="http://lennyhbt.github.io/feeds/tech.atom.xml" rel="self"></link><id>http://lennyhbt.github.io/</id><updated>2014-12-24T15:06:00+08:00</updated><entry><title>VPN 高级选项那些事</title><link href="http://lennyhbt.github.io/vpn_advance_options_misc.html" rel="alternate"></link><updated>2014-12-24T15:06:00+08:00</updated><author><name>Lennyh</name></author><id>tag:lennyhbt.github.io,2014-12-24:vpn_advance_options_misc.html</id><summary type="html">&lt;div class="section" id="id1"&gt;
-&lt;h2&gt; 一 、VPN 高级选项 &lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>佛说</title><link href="http://lennyhbt.github.io/" rel="alternate"></link><link href="http://lennyhbt.github.io/feeds/tech.atom.xml" rel="self"></link><id>http://lennyhbt.github.io/</id><updated>2014-12-24T15:06:00+08:00</updated><entry><title>VPN 高级选项那些事</title><link href="http://lennyhbt.github.io/vpn_advance_options_misc.html" rel="alternate"></link><updated>2014-12-24T15:06:00+08:00</updated><author><name>Lennyh</name></author><id>tag:lennyhbt.github.io,2014-12-24:vpn_advance_options_misc.html</id><summary type="html">
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id10"&gt; 一 、VPN 高级选项 &lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="id2"&gt;
-&lt;h3&gt;VPN 高级选项有哪些 ， 都是什么意思 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id11"&gt;VPN 高级选项有哪些 ， 都是什么意思 &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;dl class="first docutils"&gt;
 &lt;dt&gt;DNS  搜索域 &lt;/dt&gt;
@@ -36,7 +37,7 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
-&lt;h3&gt; 为什么需要这些选项 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id12"&gt; 为什么需要这些选项 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 这些选项其实只是一些基础的网络参数 ， 因此所有的网络连接 （ 包括 VPN） 都需要这些选项 。 但是并不是所有的网络连接都需要手动配置这些参数 。 那么为什么 VPN 更加的需要配置这些参数呢 ？&lt;/p&gt;
 &lt;p&gt;VPN 是一种常用于连接中 、 大型企业或团体与团体间的私人网络的通讯方法 。 虚拟私人网络的讯息透过公用的网络架构 （ 例如 ： 互联网 ） 来传送内联网的网络讯息 。 这种技术可以用不安全的网络 （ 例如 ： 互联网 ） 來傳送可靠 、 安全的訊息 。[ 摘自  &lt;a class="reference external" href="http://zh.wikipedia.org/zh/%E8%99%9B%E6%93%AC%E7%A7%81%E4%BA%BA%E7%B6%B2%E8%B7%AF&amp;gt;"&gt; 危机百科 &lt;/a&gt; ]&lt;/p&gt;
 &lt;p&gt;DNS 请求呢 ？ 在未配置 VPN 之前 ， 我们使用的是不安全网络上的 DNS 服务器 ， 如果连接到 VPN 之后我们仍然连接不安全网络上的 DNS 服务器 ， 如何保证我们的数据安全 ？
@@ -47,12 +48,12 @@ DNS 搜索域是一个方便使用的选项 。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="connman"&gt;
-&lt;h2&gt; 二 、 关于 connman&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id13"&gt; 二 、 关于 connman&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt; 使用 connman 管理系统网络连接的例子并不多 ， 网络上相关的资料也很少 。
  万幸的是 ，connman 自带的文档 (doc 目录 ) 大概可以把 connman 的设计原则和使用方法解释清除了 。
  以下内容及为参考该文档及源代码以及本人的推测得来的 ， 不一定准确 。&lt;/p&gt;
 &lt;div class="section" id="id5"&gt;
-&lt;h3&gt;connman 是如何管理所有连接的 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id14"&gt;connman 是如何管理所有连接的 &lt;/a&gt;&lt;/h3&gt;
 &lt;pre class="literal-block"&gt;
 src/provider.c  --  管理 connman 中每一个 （ 不是每一种 ） 连接 ， 保存连接 。
 src/service.c   --  管理连接服务 。
@@ -62,7 +63,7 @@ src/task.c  -- connman 中对连接的代码 ， 负责创建与维护真正的�
  等等 ， 正是这一部分使得 connman 显得更加的复杂 。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="connman-dns"&gt;
-&lt;h3&gt;connman 是如何管理网络参数的 （ 路由 、DNS 等 ）&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id15"&gt;connman 是如何管理网络参数的 （ 路由 、DNS 等 ）&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;connman 中对网络参数的管理是基于连接的 ， 即每个连接都有不同的网络参数配置 ， 该连接生效时 connman 会根据 
  连接属性更新系统的网络参数 。&lt;/p&gt;
 &lt;p&gt;connman 封装了很多对系统网络参数修改的 API， 如下列举部分 :&lt;/p&gt;
@@ -87,30 +88,32 @@ vpn-overview.txt -&amp;gt; vpn-manager-api.txt -&amp;gt; vpn-connection-api.txt&
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="qt-qml-and-d-bus"&gt;
-&lt;h2&gt; 四 、Qt 、QML and D-Bus&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id16"&gt; 四 、Qt 、QML and D-Bus&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Connman 是以 daemon 进程在系统后台运行的 ， 要访问 Connman 提供的服务 ， 只能通过进程间通信类似的机制 。
  事实上 Connman 提供的服务都是以 D-Bus 方法即信号作为 API 接口的 。&lt;/p&gt;
 &lt;p&gt; 例如 ， 新建 / 删除 VPN、 连接 VPN 的接口如下 ：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="lineno"&gt;1 &lt;/span&gt;&lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DBusConnection&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="lineno"&gt;2 &lt;/span&gt;&lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;remove&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DBusConnection&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="lineno"&gt;3 &lt;/span&gt;&lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;do_connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DBusConnection&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DBusConnection&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;remove&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DBusConnection&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;do_connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DBusConnection&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;conn&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DBusMessage&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;div class="section" id="qtd-bus"&gt;
-&lt;h3&gt;Qt 对 D-Bus 的支持 &lt;/h3&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class="section" id="qtd-bus"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id17"&gt;Qt 对 D-Bus 的支持 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Qt 对 D-Bus 的支持算是基本完善 ， 该有的都可以有 ， 不该有的可能会可以有 。（：D）&lt;/p&gt;
 &lt;p&gt; 可以通过 Qt 中 D-Bus 相关的库函数创建 D-Bus 服务 ， 或者使用别人提供的服务 。 对发送接收数据类型的支持也比较完整 ， 不仅能够 
  收发基本的整数 、 字符串等 ， 复杂的字典 、 数组等自然也不在话下 。&lt;/p&gt;
 &lt;p&gt; 但是 Qt 对 DBUS_TYPE_STRUCT 的支持需要稍多做一些工作 ， 下面的章节会有介绍 。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="qmld-bus"&gt;
-&lt;h3&gt;QML 对 D-Bus 的支持 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id18"&gt;QML 对 D-Bus 的支持 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 很遗憾 ，QML 原生并不支持 D-Bus， 但是可以通过两种变通的途径使用 。
  第一是 ， 在 C++ 代码中封装调用 D-Bus 的接口 ， 并注册到 QML 中 。
  第二种 ， 是采用非 QT 官方的插件 ， 实现 ， 例如 ： &lt;a class="reference external" href="https://github.com/nemomobile/nemo-qml-plugin-dbus"&gt;Nemo Mobile D-Bus QML Plugin&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt; 好吧 ， 其实是一种 ， 第二种其实同样是 C++ 代码中封装了调用 D-Bus 的接口 ， 但是除此之外 ， 还有什么办法可以扩展 QML 不支持的功能吗 ？&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="qtd-busdbus-type-struct"&gt;
-&lt;h3&gt;Qt 对 D-Bus 中 DBUS_TYPE_STRUCT 的支持 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id19"&gt;Qt 对 D-Bus 中 DBUS_TYPE_STRUCT 的支持 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Qt 有自己的类型系统 ， 不知是该庆幸还是该懊恼 。
 Qt 的类型系统极大的丰富了我们的精神文化生活 ， 噢不 ， 是极大的方便了我们的开发 ，QVariant， 信号 / 槽 （QObject） 等等 。
  但是这样一来我们自己定义的类型却无法使用这些方便的特性 ， 而且 Qt D-Bus 也不支持自定义类型的发送与接收 。&lt;/p&gt;
@@ -130,9 +133,9 @@ int qDBusRegisterMetaType()；
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="linux"&gt;
-&lt;h2&gt; 五 、Linux  连接管理 &lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id20"&gt; 五 、Linux  连接管理 &lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="id6"&gt;
-&lt;h3&gt; 都有哪些连接管理实现 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id21"&gt; 都有哪些连接管理实现 &lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p class="first"&gt;Android：&lt;a class="reference external" href="http://developer.android.com/reference/android/net/ConnectivityManager.html"&gt;ConnectivityManager&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -151,7 +154,7 @@ int qDBusRegisterMetaType()；
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id8"&gt;
-&lt;h3&gt; 为什么需要连接管理 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id22"&gt; 为什么需要连接管理 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 几乎所有的现代操作系统都有统一的连接管理 ， 这是为什么呢 ？
  其实这个问题我也不知道 。 所以 ， 下面的内容纯属揣测 ， 如有不对恳请指正 。&lt;/p&gt;
 &lt;p&gt; 大概是有两个原因吧 ， 我想 。
