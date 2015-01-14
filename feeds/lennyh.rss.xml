@@ -3,9 +3,9 @@
 &lt;p&gt;&lt;strong&gt; 世上并没有绝对的安全 ， 只有安全成本的问题 。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt; 真正的安全不过是一种意识 。&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="section" id="id2"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt; 过往 &lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt; 过往 &lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="id3"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt; 网络安全 &lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id9"&gt; 网络安全 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 工作相关 ， 做的一直是跟系统安全相关的东西 。&lt;/p&gt;
 &lt;p&gt; 前几年的时候在做的是网络安全 ， 所谓的网络安全 。&lt;/p&gt;
 &lt;p&gt; 说是网络安全 ， 其实跟安全的关系不是很大 ， 主要还是做网络设备 ， 支持各种协议及功能 ，
@@ -23,9 +23,9 @@ MAC/IP 绑定 ， 攻击防护 ， 网页防篡改等 ， 这在网络安全设�
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt; 现今 &lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id10"&gt; 现今 &lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="id5"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id9"&gt; 真正的系统安全 &lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id11"&gt; 真正的系统安全 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 换过工作之后负责系统的一个安全模块 ， 对安全有了稍微深入一点的理解 。&lt;/p&gt;
 &lt;p&gt; 安全与易用 ， 在某种程度上会有一些冲突 ， 但这个程度肯定不会很大 。&lt;/p&gt;
 &lt;p&gt; 易用也是一种安全 ， 想用户所想 。
@@ -48,6 +48,17 @@ MAC/IP 绑定 ， 攻击防护 ， 网页防篡改等 ， 这在网络安全设�
  工程学也不那么容易就获取到我们的电话 、 邮箱 、 密码等信息了 。&lt;/p&gt;
 &lt;p&gt; 只要在系统的所有环节做到一般性的防护 ， 就已经比在系统的关键环节做很强的防护但在 
  其他环节不防护安全很多了 。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id6"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id12"&gt; 将来 &lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="id7"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id13"&gt; 系统的安全机制 &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt; 系统还是要提供必要的基础的安全机制供其他的系统组件使用的 。&lt;/p&gt;
+&lt;p&gt; 如果需要系统提供的一些基础功能需要每个系统组件自己实现并维护 ， 轮子重复造不说 ，
+ 安全隐患的增加也是很严重的 ， 因为保证这些基础功能的安全变的更加的麻烦 。 修复起来也很麻烦 。&lt;/p&gt;
+&lt;p&gt; 系统的安全机制做的好 ， 省了很多的麻烦 。&lt;/p&gt;
+&lt;p&gt; 我们需要更加深入的研究与实现系统的安全机制 。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Lennyh</dc:creator><pubDate>Wed, 17 Dec 2014 19:24:00 +0800</pubDate><guid>tag:lennyhbt.github.io,2015-01-14:system_security_thought.html</guid><category>security</category><category>misc</category></item><item><title>VPN 高级选项那些事</title><link>http://lennyhbt.github.io/vpn_advance_options_misc.html</link><description>
