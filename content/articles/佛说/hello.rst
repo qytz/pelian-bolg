@@ -3,7 +3,6 @@ Hello Pelican & GitHub Pages
 :date: 2014-11-30 22:58
 :modified: 2014-12-11 10:19
 :tags: 缘起
-:category: misc
 :slug: helloworld
 :lang: zh
 :authors: Lennyh

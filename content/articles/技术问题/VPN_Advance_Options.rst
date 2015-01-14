@@ -4,7 +4,6 @@ VPN 高级选项那些事
 :date: 2014-12-24 15:06
 :modified: 2014-12-24 15:06
 :tags: 技术杂谈
-:category: tech
 :slug: vpn_advance_options_misc
 :lang: zh
 :authors: Lennyh
