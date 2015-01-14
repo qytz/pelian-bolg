@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>佛说</title><link>http://lennyhbt.github.io/</link><description></description><atom:link href="http://lennyhbt.github.io/feeds/lennyh.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 24 Dec 2014 15:06:00 +0800</lastBuildDate><item><title>系统安全的思考</title><link>http://lennyhbt.github.io/system_security_thought.html</link><description>&lt;p&gt;&lt;strong&gt; 世上并没有绝对的安全 ， 只有安全成本的问题 。&lt;/strong&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>佛说</title><link>http://lennyhbt.github.io/</link><description></description><atom:link href="http://lennyhbt.github.io/feeds/lennyh.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 24 Dec 2014 15:06:00 +0800</lastBuildDate><item><title>系统安全的思考</title><link>http://lennyhbt.github.io/system_security_thought.html</link><description>
+&lt;p&gt;&lt;strong&gt; 世上并没有绝对的安全 ， 只有安全成本的问题 。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt; 真正的安全不过是一种意识 。&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="section" id="id2"&gt;
-&lt;h2&gt; 过往 &lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt; 过往 &lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="id3"&gt;
-&lt;h3&gt; 网络安全 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt; 网络安全 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 工作相关 ， 做的一直是跟系统安全相关的东西 。&lt;/p&gt;
 &lt;p&gt; 前几年的时候在做的是网络安全 ， 所谓的网络安全 。&lt;/p&gt;
 &lt;p&gt; 说是网络安全 ， 其实跟安全的关系不是很大 ， 主要还是做网络设备 ， 支持各种协议及功能 ，
@@ -22,9 +23,9 @@ MAC/IP 绑定 ， 攻击防护 ， 网页防篡改等 ， 这在网络安全设�
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
-&lt;h2&gt; 现今 &lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt; 现今 &lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="id5"&gt;
-&lt;h3&gt; 真正的系统安全 &lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id9"&gt; 真正的系统安全 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 换过工作之后负责系统的一个安全模块 ， 对安全有了稍微深入一点的理解 。&lt;/p&gt;
 &lt;p&gt; 安全与易用 ， 在某种程度上会有一些冲突 ， 但这个程度肯定不会很大 。&lt;/p&gt;
 &lt;p&gt; 易用也是一种安全 ， 想用户所想 。
