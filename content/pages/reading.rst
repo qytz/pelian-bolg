@@ -15,9 +15,17 @@
 ============
 已读
 ------------
+20150122:
+
+* `LDAP注入与防御剖析 <http://drops.wooyun.org/tips/967>`_
+* `Understanding LDAP - Design and Implementation 前三章 <http://www.redbooks.ibm.com/abstracts/sg244986.html>`_
+
 
 在读
 ------------
+20150122:
+
+* `免费的编程中文书籍索引 <https://github.com/justjavac/free-programming-books-zh_CN>`_
 
 未读单
 ------------
