@@ -53,7 +53,9 @@ LDAP结构
 引用一张 `Understanding LDAP
 Design and Implementation <http://www.redbooks.ibm.com/abstracts/sg244986.html>`_ 的图示，
 
-.. image:: ../images/ldap_dit.png
+.. image:: /images/ldap_dit.png
+    :target: /images/ldap_dit.png
+    :alt: ldap dir info tree
 
 目录条目根据他们在目录信息树中的位置命名，上图底部的目录条目的DN唯一名是::
 
