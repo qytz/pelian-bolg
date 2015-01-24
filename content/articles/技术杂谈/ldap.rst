@@ -76,3 +76,5 @@ LDAP服务器配置
 参考资料
 ===========
 * `LDAP注入与防御剖析 <http://drops.wooyun.org/tips/967>`_
+* `Understanding LDAP Design and Implementation <http://www.redbooks.ibm.com/abstracts/sg244986.html>`_
+* `OpenLDAP管理员指南 <http://wiki.jabbercn.org/index.php?title=XEP-0216&oldid=115>`_
