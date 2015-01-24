@@ -71,7 +71,7 @@ LDAP安全相关的资料请参考 `LDAP注入与防御剖析 <http://drops.wooy
 LDAP服务器配置
 =================
 
-请参考 `OpenLDAP管理员指南 <http://www.baidu.com/link?url=jtM61IjaVRws4-WJ4ySXQvfOgoFLFF0oksIzxjFFIoVeHTujPvSha5KjgKhjkMQgmyl0TKGI185zSEgbsYwa7kYckOWosse1mvopLO9dj7O>`_
+请参考 `OpenLDAP管理员指南 <http://wiki.jabbercn.org/index.php?title=XEP-0216&oldid=115>`_
 
 参考资料
 ===========
