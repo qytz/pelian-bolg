@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>佛说</title><link href="http://lennyhbt.github.io/" rel="alternate"></link><link href="http://lennyhbt.github.io/feeds/lennyh.atom.xml" rel="self"></link><id>http://lennyhbt.github.io/</id><updated>2015-01-24T10:50:00+08:00</updated><entry><title>小结LDAP</title><link href="http://lennyhbt.github.io/ldap_overview.html" rel="alternate"></link><updated>2015-01-24T10:50:00+08:00</updated><author><name>Lennyh</name></author><id>tag:lennyhbt.github.io,2015-01-14:ldap_overview.html</id><summary type="html">
 &lt;div class="section" id="id1"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id11"&gt;LDAP 定义 &lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id13"&gt;LDAP 定义 &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt; 本文不打算重复 LDAP 的标准定义 ， 仅谈一下自己的理解 。&lt;/p&gt;
 &lt;p&gt;LDAP 译为轻量级目录访问协议 ， 一般网上经常拿其与关系型数据库做类比并比较他们的不同 。&lt;/p&gt;
 &lt;p&gt; 事实上 ，LDAP 既不是数据库也不是存储数据的方法 ， 而是用来访问数据的方法 。LDAP 可以访问的 
@@ -12,23 +12,23 @@
  的唯一路径 ， 数据就存储在叶子节点中 。&lt;/p&gt;
 &lt;p&gt; 由此可见 ，LDAP 与关系型数据库类比其实是两种数据存储与访问方式的类比 。&lt;/p&gt;
 &lt;div class="section" id="id2"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id12"&gt;LDAP 是访问目录信息树中数据的协议 &lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id14"&gt;LDAP 是访问目录信息树中数据的协议 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 事实上 ，LDAP 仅定义了访问协议 ， 数据的真实存储方式并不在 LDAP 的考量范围内 ， 即只要提供了 
  目录访问接口的数据都可以通过 LDAP 协议来访问 ， 如果关系型数据库实现了该接口也是可以通过 
 LDAP 协议来反问的 。 从这个角度来讲 ， 确实不应该将 LDAP 与关系型数据库做类比 。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id3"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id13"&gt;LDAP 特性 &lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id15"&gt;LDAP 特性 &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt; 且 LDAP 对数据的读取和查询做了优化 ， 并不适用于经常变动的数据 。&lt;/p&gt;
 &lt;p&gt;LDAP 不定义客户端和服务端的工作方式 ， 但会定义客户端和服务端的通信方式 ，
  另外 ，LDAP 还会定义 LDAP 数据库的访问权限及服务端数据的格式和属性 。&lt;/p&gt;
 &lt;p&gt;LDAP 有三种基本的通信机制 ： 没有处理的匿名访问 ； 基本的用户名 、 密码形式的认证 ； 使用 SASL、SSL 的安全认证方式 。LDAP 和很多其他协议一样 ， 基于 tcp/ip 协议通信 ， 注重服务的可用性 、 信息的保密性等等 。 部署了 LDAP 的应用不会直接访问目录中的内容 ， 一般通过函数调用或者 API， 应用可以通过定义的 C、Java 的 API 进行访问 ，Java 应用的访问方式为 JNDI(Java Naming and Directory Interface)。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id14"&gt;LDAP 结构 &lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id16"&gt;LDAP 结构 &lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="id5"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id15"&gt; 目录信息树 &lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id17"&gt; 目录信息树 &lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt; 目录信息树以目录条目 （entry） 来存储和组织数据 ， 每一个目录条目通常描述一个对象 （ 例如 ： 一个人 ），
  目录条目有一个唯一名 （DN，distinguished name） 进行标识 。DN 由一系列的相对唯一名 （RDN，relative distinguished name） 来标识 。 每一个目录条目由一或多个属性来描述该条目 ， 例如描述人的条目有一个 
  电话号码的属性 。&lt;/p&gt;
@@ -44,17 +44,19 @@ The organizational group people has the DN of ou=people,o=ibm,c=us.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id6"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id16"&gt;LDAP 安全 &lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id18"&gt;LDAP 安全 &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;LDAP 安全相关的资料请参考  &lt;a class="reference external" href="http://drops.wooyun.org/tips/967"&gt;LDAP 注入与防御剖析 &lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id8"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id17"&gt;LDAP 服务器配置 &lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id19"&gt;LDAP 服务器配置 &lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt; 请参考  &lt;a class="reference external" href="http://wiki.jabbercn.org/index.php?title=XEP-0216&amp;amp;oldid=115"&gt;OpenLDAP 管理员指南 &lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id9"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id18"&gt; 参考资料 &lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id20"&gt; 参考资料 &lt;/a&gt;&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://drops.wooyun.org/tips/967"&gt;LDAP 注入与防御剖析 &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.redbooks.ibm.com/abstracts/sg244986.html"&gt;Understanding LDAP Design and Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://wiki.jabbercn.org/index.php?title=XEP-0216&amp;amp;oldid=115"&gt;OpenLDAP 管理员指南 &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </summary><category term="security"></category><category term="misc"></category><category term="tech"></category></entry><entry><title>系统安全的思考</title><link href="http://lennyhbt.github.io/system_security_thought.html" rel="alternate"></link><updated>2014-12-17T19:24:00+08:00</updated><author><name>Lennyh</name></author><id>tag:lennyhbt.github.io,2015-01-14:system_security_thought.html</id><summary type="html">
