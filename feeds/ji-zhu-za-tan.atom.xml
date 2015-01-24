@@ -34,7 +34,7 @@ LDAP 协议来反问的 。 从这个角度来讲 ， 确实不应该将 LDAP �
  电话号码的属性 。&lt;/p&gt;
 &lt;p&gt; 引用一张  &lt;a class="reference external" href="http://www.redbooks.ibm.com/abstracts/sg244986.html"&gt;Understanding LDAP
 Design and Implementation&lt;/a&gt;  的图示 ，&lt;/p&gt;
-&lt;img alt="" src="../images/ldap_dit.png"/&gt;
+&lt;a class="reference external image-reference" href="/images/ldap_dit.png"&gt;&lt;img alt="ldap dir info tree" src="/images/ldap_dit.png"/&gt;&lt;/a&gt;
 &lt;p&gt; 目录条目根据他们在目录信息树中的位置命名 ， 上图底部的目录条目的 DN 唯一名是 :&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 cn=John Smith,ou=people,o=ibm,c=us.
