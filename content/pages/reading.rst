@@ -22,6 +22,8 @@
 * 20150310 `Https(SSL/TLS)原理详解 <http://www.fenesky.com/blog/2014/07/19/how-https-works.html>`_
 * 20150310 `数字证书原理 <http://www.cnblogs.com/jeffreysun/archive/2010/06/24/1627247.html>`_ 或 `数字证书原理i <http://blog.sae.sina.com.cn/archives/4939>`_
 * 20150310 `数字签名是什么？ <http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html>`_
+* 20150312 `手机是如何通过基站接入互联网的？ <http://www.zhihu.com/question/23989027>`_
+* 20150312 `创建CA、生成服务器和客户端证书(OpenVPN官方文档) <http://www.softown.cn/post/146.html>`_
 
 在读
 ------------
